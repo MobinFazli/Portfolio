@@ -3,13 +3,470 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    
+    <!-- Website Title In URL -->
+    <title>m0bin</title>
 
+    <!-- Tailwind Css File -->
     <link rel="stylesheet" href="./src/output.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+
 </head>
-<body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-    </h1>
+<body class="font-concertOne">
+    <!-- Intro Section -->
+    <div class="h-[50vh] lg:h-screen bg-gradient-to-t from-red-400 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
+
+        <!-- Nav Bar -->
+        <nav class="w-full fixed top-0 bg-white z-10 dark:bg-sky-900">
+
+            <!-- Nav Bar Container -->
+            <div class="container mx-auto py-5 flex items-center justify-between">
+
+                <!-- Logo & Name Container -->
+                <div class="flex items-center gap-1 p-3 md:p-0">
+
+                    <!-- Website Logo -->
+                    <img class="w-9" src="./img/logo.png" alt="Logo">
+
+                    <!-- Website Name -->
+                    <span class="text-3xl font-black text-black dark:text-white cursor-pointer">Portfolio</span>
+                </div>
+
+                <!-- Nav Bar Links -->
+                <ul class="hidden md:flex space-x-12 text-black dark:text-white font-light text-xl uppercase">
+
+                    <!-- Home Page -->
+                    <li class="hover:text-red-700">
+                        <a class="xl:bg-gradient-to-tr xl:px-3 xl:py-2 xl:rounded-2xl xl:w-fit" href="#">Home</a>
+                    </li>
+                    
+                    <!-- About Page -->
+                    <li class="hover:text-red-700">
+                        <a class="xl:bg-gradient-to-tr xl:px-3 xl:py-2 xl:rounded-2xl xl:w-fit" href="#About">About</a>
+                    </li>
+
+                    <!-- Services Page -->
+                    <li class="hover:text-red-700">
+                        <a class="xl:bg-gradient-to-tr xl:px-3 xl:py-2 xl:rounded-2xl xl:w-fit" href="#Services">Services</a>
+                    </li>
+
+                    <!-- Projects Page -->
+                    <li class="hover:text-red-700">
+                        <a class="xl:bg-gradient-to-tr xl:px-3 xl:py-2 xl:rounded-2xl xl:w-fit" href="#Projects">Projects</a>
+                    </li>
+
+                    <!-- Contact Page -->
+                    <li class="hover:text-red-700">
+                        <a class="xl:bg-gradient-to-tr xl:px-3 xl:py-2 xl:rounded-2xl xl:w-fit" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Dark Mode Switch -->
+                <img id="DarkBtn" class="hidden md:block w-7 cursor-pointer" src="./img/moon.png" alt="Dark Mode Switch Icon">
+                
+                <!-- Hamburger Menu For Small Screens -->
+                <div id="hamburgerMenu" class="md:hidden space-y-1 cursor-pointer z-20 p-3">
+                    <!-- Creation Of Menu Bar 3Lines -->
+                    <div class="w-6 h-1 bg-black"></div>
+                    <div class="w-6 h-1 bg-black"></div>
+                    <div class="w-6 h-1 bg-black"></div>
+                </div>
+
+                <!-- Links For Hamburger Menu -->
+                <ul id="menuLinks" class="hidden bg-indigo-800 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center uppercase">
+
+                    <!-- Home Page -->
+                    <li>
+                        <a class="menuLink" href="#">Home</a>
+                    </li>
+
+                    <!-- About Page -->
+                    <li>
+                        <a class="menuLink" href="#About">About</a>
+                    </li>
+
+                    <!-- Services Page -->
+                    <li>
+                        <a class="menuLink" href="#Services">Services</a>
+                    </li>
+
+                    <!-- Projects Page -->
+                    <li>
+                        <a class="menuLink" href="#Projects">Projects</a>
+                    </li>
+
+                    <!-- Contact Page -->
+                    <li>
+                        <a class="menuLink" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <!-- Intro Section Contents -->
+
+        <!-- Intro Image -->
+        <img class="absolute left-0 bottom-0 right-0 mx-auto h-3/4 object-cover sm:h-3/4" src="./img/avatar3.png" alt="Avatar">
+        
+        <!-- Animated Text Using AutoTyping GitHub -->
+        <div class="absolute top-24 left-0 bottom-0 right-0 mx-auto text-lg text-center sm:top-24 sm:text-center sm:left-0 sm:bottom-0 sm:right-0 sm:mx-auto sm:text-2xl md:top-20 md:text-center md:left-0 md:bottom-0 md:right-0 md:mx-auto md:text-3xl lg:top-20 lg:text-center lg:left-0 lg:bottom-0 lg:right-0 lg:mx-auto lg:text-6xl xl:top-32 xl:left-0 xl:bottom-0 xl:right-0 xl:mx-auto xl:text-center xl:text-6xl xl:uppercase">
+            
+            <!-- Text Will Be Display By JS File -->
+            <span id="text" class="text-black"></span>
+
+        </div>
+
+    </div>
+
+    <!-- About Page -->
+    <div id="About" class="px-10 dark:bg-slate-900">
+
+        <!-- About Page Content Container -->
+        <div class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
+
+            <!-- Left Side Content Of About Page Container-->
+            <div class="relative">
+
+                <!-- <img class="h-1/4 absolute top-0 left-0 -z-10" src="./img/dots.png" alt="Dot"> -->
+
+                <!-- Image For About Page -->
+                <div class="h-full rounded-full overflow-hidden">
+
+                    <!-- Image -->
+                    <img class="w-screen h-full" src="./img/abAvatar.png" alt="Avatar">
+
+                </div>
+
+            </div>
+
+            <!-- Right Side Content Of About Page Container -->
+            <div class="my-auto flex flex-col gap-3">
+
+                <!-- Main Text -->
+                <h1 class="text-indigo-800 font-black text-2xl uppercase">About Me</h1>
+
+                <!-- Sub Text -->
+                <h1 class="text-4xl">Best Experience</h1>
+
+                <!-- Description -->
+                <p class="text-gray-800 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, ipsum earum? Corrupti, tenetur enim? Eveniet eligendi, iste possimus ab sint velit numquam sunt animi vitae perspiciatis, accusantium, recusandae sequi autem?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda natus sed iste error, nisi saepe doloremque. Repudiandae, nihil ab?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos obcaecati quod praesentium vitae iste eveniet incidunt dolor odio quae recusandae!</p>
+                
+                <!-- Skill 01 -->
+                <h2 class="text-gray-800 font-bold">HTML</h2>
+
+                <!-- Skill 01 Progress Line -->
+                <div class="w-full bg-black h-1.5 rounded-md">
+
+                    <!-- Skill01 Progress Line -->
+                    <div class="w-full bg-red-600 h-1.5 rounded-md"></div>
+
+                </div>
+
+                <!-- Skill 02 -->
+                <h2 class="text-gray-800 font-bold">CSS</h2>
+
+                <!-- Skill 02 Progress Line -->
+                <div class="w-full bg-black h-1.5 rounded-md">
+
+                    <!-- Skill 02 Progress Line -->
+                    <div class="w-5/6 bg-red-600 h-1.5 rounded-md"></div>
+
+                </div>
+
+                <!-- Skill 03 -->
+                <h2 class="text-gray-800 font-bold">JS</h2>
+
+                <!-- Skill 03 Progress Line -->
+                <div class="w-full bg-black h-1.5 rounded-md">
+
+                    <!-- Skill 03 Progress Line -->
+                    <div class="w-4/6 bg-red-600 h-1.5 rounded-md"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Services Page -->
+    <div id="Services" class="dark:bg-slate-900">
+
+        <!-- Services Page Container -->
+        <div class="container mx-auto">
+
+             <!-- Top Content Of Services Page -->
+            <div class="flex flex-col gap-3 items-center">
+
+                <!-- Main Text -->
+                <h1 class="text-indigo-800 font-black text-2xl uppercase">Services</h1>
+
+                <!-- Sub Text -->
+                <h1 class="text-4xl">What Do I Offer?</h1>
+
+                <!-- Description -->
+                <p class="text-center text-gray-900">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime exercitationem quibusdam iure ipsum veritatis temporibus obcaecati, ipsa dolore quasi expedita?</p>
+
+            </div>
+
+            <!-- Bottom Content Of Services Page -->
+            <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+
+                <!-- Service01 Card Container -->
+                <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700">
+
+                    <!-- Service01 Image -->
+                    <img class="w-14 rounded-full" src="./img/service01.jpg" alt="Icon">
+
+                    <!-- Service01 Title -->
+                    <h1 class="font-bold text-lg uppercase">UI / UX Design</h1>
+
+                    <!-- Service01 Description -->
+                    <p class="text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusantium natus.</p>
+
+                    <!-- Service01 Link -->
+                    <a class="text-white font-semibold text-m bg-black px-3 py-2 rounded-md w-fit" href="#">Read More</a>
+
+                </div>
+
+                <!-- Service02 Card Container -->
+                <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700">
+
+                    <!-- Service02 Image -->
+                    <img class="w-14 rounded-full" src="./img/service02.jpg" alt="Icon">
+
+                    <!-- Service02 Title -->
+                    <h1 class="font-bold text-lg uppercase">UI / UX Design</h1>
+
+                    <!-- Service02 Description -->
+                    <p class="text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusantium natus.</p>
+
+                    <!-- Service02 Link -->
+                    <a class="text-white font-semibold text-m bg-black px-3 py-2 rounded-md w-fit" href="#">Read More</a>
+
+                </div>
+
+                <!-- Service03 Card Container -->
+                <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700">
+
+                    <!-- Service03 Image -->
+                    <img class="w-14 rounded-full" src="./img/service03.jpg" alt="Icon">
+
+                    <!-- Service03 Title -->
+                    <h1 class="font-bold text-lg uppercase">UI / UX Design</h1>
+
+                    <!-- Service03 Description -->
+                    <p class="text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusantium natus.</p>
+
+                    <!-- Service03 Link -->
+                    <a class="text-white font-semibold text-m bg-black px-3 py-2 rounded-md w-fit" href="#">Read More</a>
+                    
+                </div>
+
+                <!-- Service04 Card Container -->
+                <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700">
+
+                    <!-- Service04 Image -->
+                    <img class="w-14 rounded-full" src="./img/service04.jpg" alt="Icon">
+
+                    <!-- Service04 Title -->
+                    <h1 class="font-bold text-lg uppercase">UI / UX Design</h1>
+
+                    <!-- Service04 Description -->
+                    <p class="text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusantium natus.</p>
+
+                    <!-- Service04 Link -->
+                    <a class="text-white font-semibold text-m bg-black px-3 py-2 rounded-md w-fit" href="#">Read More</a>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Projects Page -->
+    <div id="Projects" class="py-40 dark:bg-slate-900">
+
+        <!-- Projects Page Container -->
+        <div class="container mx-auto">
+
+            <!-- Top Content Of Projects Page -->
+            <div class="flex flex-col gap-3 items-center">
+
+                <!-- Main Text -->
+                <h1 class="text-indigo-800 font-black text-2xl uppercase">Projects</h1>
+
+                <!-- Sub Text -->
+                <h1 class="text-4xl">Check Some Of My Works</h1>
+
+                <!-- Description -->
+                <p class="text-center text-gray-800">Below You Can Find Some Of My Projects That I Have Done Recently With Link To Project Demo</p>
+
+            </div>
+
+             <!-- Bottom Content Of Projects Page -->
+            <div class="p-5 sm:p-0 flex flex-wrap justify-between">
+
+                <!-- Project01 Container -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+
+                    <!-- Project01 Image -->
+                    <img src="./img/project.png" alt="Projects">
+
+                </div>
+
+                  <!-- Project02 Container -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+
+                    <!-- Project02 Image -->
+                    <img src="./img/project.png" alt="Projects">
+                    
+                </div>
+
+                <!-- Project03 Container -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+
+                    <!-- Project03 Image -->
+                    <img src="./img/project.png" alt="Projects">
+                    
+                </div>
+
+                <!-- Project04 Container -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+
+                    <!-- Project04 Image -->
+                    <img src="./img/project.png" alt="Projects">
+                    
+                </div>
+
+                <!-- Project05 Container -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+
+                    <!-- Project05 Image -->
+                    <img src="./img/project.png" alt="Projects">
+                    
+                </div>
+
+                <!-- Project06 Container -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+
+                    <!-- Project06 Image -->
+                    <img src="./img/project.png" alt="Projects">
+                    
+                </div>
+
+                <!-- Project07 Container -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+
+                    <!-- Project07 Image -->
+                    <img src="./img/project.png" alt="Projects">
+                    
+                </div>
+
+                <!-- Project08 Container -->
+                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+
+                    <!-- Project08 Image -->
+                    <img src="./img/project.png" alt="Projects">
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Contact Page -->
+    <div id="Contact" class="dark:bg-slate-900">
+
+        <!-- Contact Page Container -->
+        <div class="container mx-auto">
+
+            <!-- Top Content Of Contact Page -->
+            <div class="flex flex-col gap-3 items-center">
+                
+                <!-- Main Text -->
+                <h1 class="text-indigo-800 font-black text-2xl uppercase">Contact</h1>
+
+                <!-- Sub Text -->
+                <h1 class="text-4xl">Have A Question?</h1>
+
+            </div>
+
+            <!-- Bottom Content Of Contact Page - Contact Form -->
+            <form class="mt-0 p-8 flex flex-col gap-5 items-center" action="#">
+
+                <!-- Input Field For User Name -->
+                <input class="p-2 w-full md:w-1/2 ring-2 ring-fuchsia-900 rounded-md dark:bg-slate-800" type="text" placeholder="Name">
+
+                <!-- Input Field For User Email Address -->
+                <input class="p-2 w-full md:w-1/2 ring-2 ring-fuchsia-900 rounded-md dark:bg-slate-800" type="email" placeholder="Email">
+
+                <!-- Input Field For User Message -->
+                <textarea class="p-2 w-full md:w-1/2 ring-2 ring-fuchsia-900 rounded-md dark:bg-slate-800" cols="30" rows="10" placeholder="Message"></textarea>
+
+                <!-- Button To Submit The Form -->
+                <button class="w-full md:w-1/2 bg-indigo-800 text-white font-medium px-3 py-2 cursor-pointer rounded-md">Submit</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <!-- Footer Section -->
+    <div class="w-full bg-black">
+
+        <!-- Footer Section Container -->
+        <div class="container mx-auto py-5 flex items-center justify-between">
+
+            <!-- Logo & Name Container -->
+            <div class="flex items-center gap-2">
+
+                <!-- Website Logo -->
+                <img class="w-8" src="./img/logo.png" alt="Logo">
+
+                <!-- Webstie Name -->
+                <span class="text-2xl font-bold text-white">Portfolio</span>
+
+            </div>
+
+            <!-- <span class="hidden md:block font-medium text-white">© 2022 Portfolio. Design With ♥️ By Mobin Fazli.</span> -->
+
+            <!-- Social Media Container -->
+            <div class="flex gap-2">
+
+                <!-- Facbook -->
+                <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="Facebook">
+
+                <!-- Instagram -->
+                <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="Instagram">
+
+                <!-- Twitter -->
+                <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="Twitter">
+
+                <!-- Linkedin -->
+                <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="Linkedin">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JS File -->
+    <script src="./app.js"></script>
+
+    <!-- AutoTyping JS From GitHub -->
+    <script src="./autotyping.js"></script>
+
 </body>
 </html>
