@@ -14,12 +14,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 
 </head>
-<body class="font-concertOne">
+<body class="font-concertOne dark:bg-slate-900">
     <!-- Intro Section -->
-    <div class="h-[50vh] lg:h-screen bg-gradient-to-t from-red-400 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
+    <div class="h-[50vh] lg:h-screen bg-gradient-to-t from-red-500 to-red-100 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
 
         <!-- Nav Bar -->
-        <nav class="w-full fixed top-0 bg-white z-10 dark:bg-sky-900">
+        <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
 
             <!-- Nav Bar Container -->
             <div class="container mx-auto py-5 flex items-center justify-between">
@@ -28,37 +28,37 @@
                 <div class="flex items-center gap-1 p-3 md:p-0">
 
                     <!-- Website Logo -->
-                    <img class="w-9" src="./img/logo.png" alt="Logo">
+                    <a href="#"><img class="w-9" src="./img/logo.png" alt="Logo"></a>
 
                     <!-- Website Name -->
-                    <span class="text-3xl font-black text-black dark:text-white cursor-pointer">Portfolio</span>
+                    <a href="#"><span class="text-3xl font-black text-black dark:text-white cursor-pointer">Portfolio</span></a>
                 </div>
 
                 <!-- Nav Bar Links -->
                 <ul class="hidden md:flex space-x-12 text-black dark:text-white font-light text-xl uppercase">
 
                     <!-- Home Page -->
-                    <li class="hover:text-red-700">
+                    <li class="hover:text-white dark:hover:text-red-600">
                         <a class="xl:bg-gradient-to-tr xl:px-3 xl:py-2 xl:rounded-2xl xl:w-fit" href="#">Home</a>
                     </li>
                     
                     <!-- About Page -->
-                    <li class="hover:text-red-700">
+                    <li class="hover:text-white dark:hover:text-red-600">
                         <a class="xl:bg-gradient-to-tr xl:px-3 xl:py-2 xl:rounded-2xl xl:w-fit" href="#About">About</a>
                     </li>
 
                     <!-- Services Page -->
-                    <li class="hover:text-red-700">
+                    <li class="hover:text-white dark:hover:text-red-600">
                         <a class="xl:bg-gradient-to-tr xl:px-3 xl:py-2 xl:rounded-2xl xl:w-fit" href="#Services">Services</a>
                     </li>
 
                     <!-- Projects Page -->
-                    <li class="hover:text-red-700">
+                    <li class="hover:text-white dark:hover:text-red-600">
                         <a class="xl:bg-gradient-to-tr xl:px-3 xl:py-2 xl:rounded-2xl xl:w-fit" href="#Projects">Projects</a>
                     </li>
 
                     <!-- Contact Page -->
-                    <li class="hover:text-red-700">
+                    <li class="hover:text-white dark:hover:text-red-600">
                         <a class="xl:bg-gradient-to-tr xl:px-3 xl:py-2 xl:rounded-2xl xl:w-fit" href="#Contact">Contact</a>
                     </li>
                 </ul>
@@ -116,7 +116,7 @@
         <div class="absolute top-24 left-0 bottom-0 right-0 mx-auto text-lg text-center sm:top-24 sm:text-center sm:left-0 sm:bottom-0 sm:right-0 sm:mx-auto sm:text-2xl md:top-20 md:text-center md:left-0 md:bottom-0 md:right-0 md:mx-auto md:text-3xl lg:top-20 lg:text-center lg:left-0 lg:bottom-0 lg:right-0 lg:mx-auto lg:text-6xl xl:top-32 xl:left-0 xl:bottom-0 xl:right-0 xl:mx-auto xl:text-center xl:text-6xl xl:uppercase">
             
             <!-- Text Will Be Display By JS File -->
-            <span id="text" class="text-black"></span>
+            <span id="text" class="text-black dark:text-white"></span>
 
         </div>
 
@@ -147,19 +147,19 @@
             <div class="my-auto flex flex-col gap-3">
 
                 <!-- Main Text -->
-                <h1 class="text-indigo-800 font-black text-2xl uppercase">About Me</h1>
+                <h1 class="text-indigo-600 font-black text-2xl uppercase">About Me</h1>
 
                 <!-- Sub Text -->
-                <h1 class="text-4xl">Best Experience</h1>
+                <h1 class="text-4xl dark:text-white">Crafting Mastery</h1>
 
                 <!-- Description -->
-                <p class="text-gray-800 text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam, ipsum earum? Corrupti, tenetur enim? Eveniet eligendi, iste possimus ab sint velit numquam sunt animi vitae perspiciatis, accusantium, recusandae sequi autem?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit assumenda natus sed iste error, nisi saepe doloremque. Repudiandae, nihil ab?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos obcaecati quod praesentium vitae iste eveniet incidunt dolor odio quae recusandae!</p>
+                <p class="text-gray-800 text-justify capitalize dark:text-gray-300">My journey in web development has been a testament to continuous growth and learning. With each project, I embrace the opportunity to tackle complex challenges, transforming ideas into tangible solutions that embody innovation and creativity. Every line of code is a canvas, and I thrive on pushing the boundaries of what's possible to deliver results that not only meet but exceed expectations. Guided by a relentless pursuit of excellence, I view each project as a stepping stone toward refining my craft and shaping the future of digital experiences.</p>
                 
                 <!-- Skill 01 -->
-                <h2 class="text-gray-800 font-bold">HTML</h2>
+                <h2 class="text-gray-800 font-bold dark:text-white">HTML</h2>
 
                 <!-- Skill 01 Progress Line -->
-                <div class="w-full bg-black h-1.5 rounded-md">
+                <div class="w-full bg-black dark:bg-white h-1.5 rounded-md">
 
                     <!-- Skill01 Progress Line -->
                     <div class="w-full bg-red-600 h-1.5 rounded-md"></div>
@@ -167,10 +167,10 @@
                 </div>
 
                 <!-- Skill 02 -->
-                <h2 class="text-gray-800 font-bold">CSS</h2>
+                <h2 class="text-gray-800 font-bold dark:text-white">CSS</h2>
 
                 <!-- Skill 02 Progress Line -->
-                <div class="w-full bg-black h-1.5 rounded-md">
+                <div class="w-full bg-black dark:bg-white h-1.5 rounded-md">
 
                     <!-- Skill 02 Progress Line -->
                     <div class="w-5/6 bg-red-600 h-1.5 rounded-md"></div>
@@ -178,10 +178,10 @@
                 </div>
 
                 <!-- Skill 03 -->
-                <h2 class="text-gray-800 font-bold">JS</h2>
+                <h2 class="text-gray-800 font-bold dark:text-white">JS</h2>
 
                 <!-- Skill 03 Progress Line -->
-                <div class="w-full bg-black h-1.5 rounded-md">
+                <div class="w-full bg-black dark:bg-white h-1.5 rounded-md">
 
                     <!-- Skill 03 Progress Line -->
                     <div class="w-4/6 bg-red-600 h-1.5 rounded-md"></div>
@@ -204,13 +204,13 @@
             <div class="flex flex-col gap-3 items-center">
 
                 <!-- Main Text -->
-                <h1 class="text-indigo-800 font-black text-2xl uppercase">Services</h1>
+                <h1 class="text-indigo-600 font-black text-2xl uppercase">Services</h1>
 
                 <!-- Sub Text -->
-                <h1 class="text-4xl">What Do I Offer?</h1>
+                <h1 class="text-4xl dark:text-white">Discover What I Offer</h1>
 
                 <!-- Description -->
-                <p class="text-center text-gray-900">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime exercitationem quibusdam iure ipsum veritatis temporibus obcaecati, ipsa dolore quasi expedita?</p>
+                <p class="text-center text-gray-900 capitalize dark:text-gray-300">Explore my range of services tailored to meet your needs and elevate your digital presence.</p>
 
             </div>
 
@@ -218,70 +218,70 @@
             <div class="p-5 sm:p-0 flex flex-wrap justify-between">
 
                 <!-- Service01 Card Container -->
-                <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700">
+                <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700 dark:border-white dark:hover:border-red-600">
 
                     <!-- Service01 Image -->
-                    <img class="w-14 rounded-full" src="./img/service01.jpg" alt="Icon">
+                    <img class="w-16 h-16 rounded-full" src="./img/webDesign.png" alt="Icon">
 
                     <!-- Service01 Title -->
-                    <h1 class="font-bold text-lg uppercase">UI / UX Design</h1>
+                    <h1 class="font-bold text-lg uppercase dark:text-white">Web Design</h1>
 
                     <!-- Service01 Description -->
-                    <p class="text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusantium natus.</p>
+                    <p class="text-gray-900 dark:text-white capitalize text-justify">Transform your online presence with our professional web design service. We'll craft stunning, user-friendly websites tailored to your brand, ensuring a seamless experience across all devices. Let's bring your vision to life.</p>
 
                     <!-- Service01 Link -->
-                    <a class="text-white font-semibold text-m bg-black px-3 py-2 rounded-md w-fit" href="#">Read More</a>
+                    <a class="text-white font-semibold text-m bg-black px-3 py-2 rounded-md w-fit dark:text-white dark:bg-red-600" href="#">Learn More</a>
 
                 </div>
 
                 <!-- Service02 Card Container -->
-                <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700">
+                <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700 dark:border-white dark:hover:border-red-600">
 
                     <!-- Service02 Image -->
                     <img class="w-14 rounded-full" src="./img/service02.jpg" alt="Icon">
 
                     <!-- Service02 Title -->
-                    <h1 class="font-bold text-lg uppercase">UI / UX Design</h1>
+                    <h1 class="font-bold text-lg uppercase dark:text-white">UI / UX Design</h1>
 
                     <!-- Service02 Description -->
-                    <p class="text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusantium natus.</p>
+                    <p class="text-gray-900 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusantium natus.</p>
 
                     <!-- Service02 Link -->
-                    <a class="text-white font-semibold text-m bg-black px-3 py-2 rounded-md w-fit" href="#">Read More</a>
+                    <a class="text-white font-semibold text-m bg-black px-3 py-2 rounded-md w-fit dark:text-white dark:bg-red-600" href="#">Read More</a>
 
                 </div>
 
                 <!-- Service03 Card Container -->
-                <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700">
+                <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700 dark:border-white dark:hover:border-red-600">
 
                     <!-- Service03 Image -->
                     <img class="w-14 rounded-full" src="./img/service03.jpg" alt="Icon">
 
                     <!-- Service03 Title -->
-                    <h1 class="font-bold text-lg uppercase">UI / UX Design</h1>
+                    <h1 class="font-bold text-lg uppercase dark:text-white">UI / UX Design</h1>
 
                     <!-- Service03 Description -->
-                    <p class="text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusantium natus.</p>
+                    <p class="text-gray-900 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusantium natus.</p>
 
                     <!-- Service03 Link -->
-                    <a class="text-white font-semibold text-m bg-black px-3 py-2 rounded-md w-fit" href="#">Read More</a>
+                    <a class="text-white font-semibold text-m bg-black px-3 py-2 rounded-md w-fit dark:text-white dark:bg-red-600" href="#">Read More</a>
                     
                 </div>
 
                 <!-- Service04 Card Container -->
-                <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700">
+                <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700 dark:border-white dark:hover:border-red-600">
 
                     <!-- Service04 Image -->
                     <img class="w-14 rounded-full" src="./img/service04.jpg" alt="Icon">
 
                     <!-- Service04 Title -->
-                    <h1 class="font-bold text-lg uppercase">UI / UX Design</h1>
+                    <h1 class="font-bold text-lg uppercase dark:text-white">UI / UX Design</h1>
 
                     <!-- Service04 Description -->
-                    <p class="text-gray-900">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusantium natus.</p>
+                    <p class="text-gray-900 dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, accusantium natus.</p>
 
                     <!-- Service04 Link -->
-                    <a class="text-white font-semibold text-m bg-black px-3 py-2 rounded-md w-fit" href="#">Read More</a>
+                    <a class="text-white font-semibold text-m bg-black px-3 py-2 rounded-md w-fit dark:text-white dark:bg-red-600" href="#">Read More</a>
                     
                 </div>
 
@@ -301,13 +301,13 @@
             <div class="flex flex-col gap-3 items-center">
 
                 <!-- Main Text -->
-                <h1 class="text-indigo-800 font-black text-2xl uppercase">Projects</h1>
+                <h1 class="text-indigo-600 font-black text-2xl uppercase">Projects</h1>
 
                 <!-- Sub Text -->
-                <h1 class="text-4xl">Check Some Of My Works</h1>
+                <h1 class="text-4xl dark:text-white">Discover Our Portfolio</h1>
 
                 <!-- Description -->
-                <p class="text-center text-gray-800">Below You Can Find Some Of My Projects That I Have Done Recently With Link To Project Demo</p>
+                <p class="text-center text-gray-800 capitalize dark:text-gray-200">Browse through my recent projects, each meticulously crafted to showcase my expertise. Click on the links to explore project demos.</p>
 
             </div>
 
@@ -315,68 +315,60 @@
             <div class="p-5 sm:p-0 flex flex-wrap justify-between">
 
                 <!-- Project01 Container -->
-                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+                <div class="w-full md:w-5/12 lg:w-wide lg:h-full shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
 
                     <!-- Project01 Image -->
-                    <img src="./img/project.png" alt="Projects">
+                    <img class="w-fit h-full" src="./img/proj02.png" alt="Projects">
 
                 </div>
 
                   <!-- Project02 Container -->
-                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+                <div class="w-full md:w-5/12 lg:w-wide lg:h-full shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
 
                     <!-- Project02 Image -->
-                    <img src="./img/project.png" alt="Projects">
+                    <img class="w-fit h-full" src="./img/proj02.png" alt="Projects">
                     
                 </div>
 
                 <!-- Project03 Container -->
-                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+                <div class="w-full md:w-5/12 lg:w-wide lg:h-full shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
 
                     <!-- Project03 Image -->
-                    <img src="./img/project.png" alt="Projects">
+                    <img src="./img/proj02.png" alt="Projects">
                     
                 </div>
 
                 <!-- Project04 Container -->
-                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+                <div class="w-full md:w-5/12 lg:w-wide lg:h-full shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
 
                     <!-- Project04 Image -->
-                    <img src="./img/project.png" alt="Projects">
+                    <img src="./img/proj02.png" alt="Projects">
                     
                 </div>
 
                 <!-- Project05 Container -->
-                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+                <div class="w-full md:w-5/12 lg:w-wide lg:h-full shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
 
                     <!-- Project05 Image -->
-                    <img src="./img/project.png" alt="Projects">
+                    <img src="./img/proj02.png" alt="Projects">
                     
                 </div>
 
                 <!-- Project06 Container -->
-                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+                <div class="w-full md:w-5/12 lg:w-wide lg:h-full shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
 
                     <!-- Project06 Image -->
-                    <img src="./img/project.png" alt="Projects">
+                    <img src="./img/proj02.png" alt="Projects">
                     
                 </div>
 
                 <!-- Project07 Container -->
-                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
+                <!-- <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
 
-                    <!-- Project07 Image -->
+                    Project07 Image
                     <img src="./img/project.png" alt="Projects">
                     
-                </div>
-
-                <!-- Project08 Container -->
-                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-xl p-5 my-3 md:my-11 m-1">
-
-                    <!-- Project08 Image -->
-                    <img src="./img/project.png" alt="Projects">
-                    
-                </div>
+                </div> -->
 
             </div>
 
@@ -385,7 +377,7 @@
     </div>
 
     <!-- Contact Page -->
-    <div id="Contact" class="dark:bg-slate-900">
+    <div id="Contact" class="dark:bg-slate-900 pb-20">
 
         <!-- Contact Page Container -->
         <div class="container mx-auto">
@@ -394,10 +386,10 @@
             <div class="flex flex-col gap-3 items-center">
                 
                 <!-- Main Text -->
-                <h1 class="text-indigo-800 font-black text-2xl uppercase">Contact</h1>
+                <h1 class="text-indigo-600 font-black text-2xl uppercase">Contact</h1>
 
                 <!-- Sub Text -->
-                <h1 class="text-4xl">Have A Question?</h1>
+                <h1 class="text-4xl dark:text-white">Have A Question?</h1>
 
             </div>
 
@@ -414,7 +406,7 @@
                 <textarea class="p-2 w-full md:w-1/2 ring-2 ring-fuchsia-900 rounded-md dark:bg-slate-800" cols="30" rows="10" placeholder="Message"></textarea>
 
                 <!-- Button To Submit The Form -->
-                <button class="w-full md:w-1/2 bg-indigo-800 text-white font-medium px-3 py-2 cursor-pointer rounded-md">Submit</button>
+                <button class="w-full md:w-1/2 bg-indigo-800 text-white font-medium px-3 py-2 cursor-pointer rounded-md uppercase">Submit</button>
 
             </form>
 

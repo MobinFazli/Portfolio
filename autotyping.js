@@ -67,7 +67,7 @@ var AutoTyping = function(e) {
     }
 }]).default;
 
-const exampleText = ["Where Vision Becomes Reality"];
+const exampleText = ["✨ Where Vision Becomes Reality ✨"];
 const exampleTyping = new AutoTyping('#text', exampleText, {
     typeSpeed: 100,
     deleteSpeed: 100,
