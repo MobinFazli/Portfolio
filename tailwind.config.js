@@ -11,6 +11,7 @@ module.exports = {
         "big": "40rem"
       },
       width: {
+        "sw": "20%",
         "wd": "26%",
         "wide": "30%",
         "wider": "49%"
