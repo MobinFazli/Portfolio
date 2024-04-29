@@ -8,18 +8,20 @@
     <title>m0bin</title>
 
     <!-- Tailwind Css File -->
-    <link rel="stylesheet" href="./src/output.css">
+    <link href="./src/output.css" rel="stylesheet">
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
 
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body class="font-concertOne dark:bg-slate-900">
-    <!-- Intro Section -->
-    <div class="h-[50vh] lg:h-screen bg-gradient-to-t from-red-500 to-red-400 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
+    <!-- Landing Page -->
+    <div class="h-[50vh] bg-gradient-to-t from-red-500 to-red-400 relative overflow-hidden lg:h-screen dark:from-slate-800 dark:to-slate-900">
 
         <!-- Nav Bar -->
-        <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
+        <nav class="w-full fixed top-0 z-10 bg-white dark:bg-slate-900">
 
             <!-- Nav Bar Container -->
             <div class="container mx-auto py-5 flex items-center justify-between">
@@ -28,14 +30,15 @@
                 <div class="flex items-center gap-1 p-3 md:p-0">
 
                     <!-- Website Logo -->
-                    <a href="#"><img class="w-9" src="./img/logo.png" alt="Logo"></a>
+                    <a href="#"><img class="w-14" src="./img/Logo.png" alt="Logo"></a>
 
                     <!-- Website Name -->
-                    <a href="#"><span class="text-3xl font-black text-black dark:text-white cursor-pointer">Portfolio</span></a>
+                    <!-- <a href="#"><span class="text-3xl font-black text-black dark:text-white cursor-pointer">Portfolio</span></a> -->
+
                 </div>
 
                 <!-- Nav Bar Links -->
-                <ul class="hidden md:flex space-x-12 text-black dark:text-white font-light text-xl uppercase">
+                <ul class="hidden space-x-12 font-light text-xl uppercase text-black md:flex dark:text-white">
 
                     <!-- Home Page -->
                     <li class="hover:text-white dark:hover:text-red-600">
@@ -61,17 +64,18 @@
                     <li class="hover:text-white dark:hover:text-red-600">
                         <a class="xl:bg-gradient-to-tr xl:px-3 xl:py-2 xl:rounded-2xl xl:w-fit" href="#Contact">Contact</a>
                     </li>
+
                 </ul>
 
                 <!-- Dark Mode Switch -->
-                <img id="DarkBtn" class="hidden md:block w-7 cursor-pointer" src="./img/moon.png" alt="Dark Mode Switch Icon">
+                <img id="DarkBtn" class="hidden w-9 cursor-pointer md:block" src="./img/DarkMode.png" alt="Dark Mode Icon">
                 
                 <!-- Hamburger Menu For Small Screens -->
-                <div id="hamburgerMenu" class="md:hidden space-y-1 cursor-pointer z-20 p-3">
-                    <!-- Creation Of Menu Bar 3Lines -->
-                    <div class="w-6 h-1 bg-black"></div>
-                    <div class="w-6 h-1 bg-black"></div>
-                    <div class="w-6 h-1 bg-black"></div>
+                <div id="hamburgerMenu" class="md:hidden cursor-pointer z-20 p-3">
+
+                    <!-- Menu Icon -->
+                    <i class='bx bxs-grid text-4xl h-1 dark:text-white'></i>
+
                 </div>
 
                 <!-- Links For Hamburger Menu -->
@@ -79,38 +83,61 @@
 
                     <!-- Home Page -->
                     <li>
-                        <a class="menuLink" href="#">Home</a>
+                        <a class="menuLink border-solid border-2 border-black px-3 py-2" href="#">Home</a>
                     </li>
 
                     <!-- About Page -->
                     <li>
-                        <a class="menuLink" href="#About">About</a>
+                        <a class="menuLink border-solid border-2 border-black px-3 py-2" href="#About">About</a>
                     </li>
 
                     <!-- Services Page -->
                     <li>
-                        <a class="menuLink" href="#Services">Services</a>
+                        <a class="menuLink border-solid border-2 border-black px-3 py-2" href="#Services">Services</a>
                     </li>
 
                     <!-- Projects Page -->
                     <li>
-                        <a class="menuLink" href="#Projects">Projects</a>
+                        <a class="menuLink border-solid border-2 border-black px-3 py-2" href="#Projects">Projects</a>
                     </li>
 
                     <!-- Contact Page -->
                     <li>
-                        <a class="menuLink" href="#Contact">Contact</a>
+                        <a class="menuLink border-solid border-2 border-black px-3 py-2" href="#Contact">Contact</a>
                     </li>
+
+                    <!-- Social Media -->
+                    <li>
+                        <!-- Social Media Container -->
+                        <div class="flex gap-2">
+
+                            <!-- Social Media Icon -->
+                            <i class='bx bxl-instagram text-white text-3xl'></i>
+
+                            <!-- Social Media Icon -->
+                            <i class='bx bxl-linkedin-square text-white text-3xl'></i>
+
+                            <!-- Social Media Icon -->
+                            <i class='bx bxl-whatsapp text-white text-3xl'></i>
+
+                            <!-- Social Media Icon -->
+                            <i class='bx bxl-twitter text-white text-3xl'></i>
+
+                            <!-- Social Media Icon -->
+                            <i class='bx bxl-github text-white text-3xl'></i>
+                        </div>
+                    </li>
+
                 </ul>
 
             </div>
 
         </nav>
 
-        <!-- Intro Section Contents -->
+        <!-- Landing Page Contents -->
 
-        <!-- Intro Image -->
-        <img class="absolute left-0 bottom-0 right-0 mx-auto h-3/4 object-cover sm:h-3/4" src="./img/avatar3.png" alt="Avatar">
+        <!-- Landing Page Image -->
+        <img class="absolute left-0 bottom-0 right-0 mx-auto h-3/4 object-cover sm:h-3/4" src="./img/LandingPageAvatar.png" alt="Landing Page Avatar">
         
         <!-- Animated Text Using AutoTyping GitHub -->
         <div class="absolute top-24 left-0 bottom-0 right-0 mx-auto text-lg text-center sm:top-24 sm:text-center sm:left-0 sm:bottom-0 sm:right-0 sm:mx-auto sm:text-2xl md:top-20 md:text-center md:left-0 md:bottom-0 md:right-0 md:mx-auto md:text-3xl lg:top-20 lg:text-center lg:left-0 lg:bottom-0 lg:right-0 lg:mx-auto lg:text-6xl xl:top-32 xl:left-0 xl:bottom-0 xl:right-0 xl:mx-auto xl:text-center xl:text-6xl xl:uppercase">
@@ -167,13 +194,11 @@
             <!-- Left Side Content Of About Page Container-->
             <div class="relative">
 
-                <!-- <img class="h-1/4 absolute top-0 left-0 -z-10" src="./img/dots.png" alt="Dot"> -->
-
-                <!-- Image For About Page -->
+                <!-- Image Container For About Page -->
                 <div class="h-full rounded-full overflow-hidden">
 
                     <!-- Image -->
-                    <img class="w-screen h-full" src="./img/abAvatar.png" alt="Avatar">
+                    <img class="w-screen h-full" src="./img/AboutPageAvatar.png" alt="About Page Avatar">
 
                 </div>
 
@@ -192,7 +217,7 @@
                 <p class="text-gray-800 text-justify capitalize dark:text-gray-300">My journey in web development has been a testament to continuous growth and learning. With each project, I embrace the opportunity to tackle complex challenges, transforming ideas into tangible solutions that embody innovation and creativity. Every line of code is a canvas, and I thrive on pushing the boundaries of what's possible to deliver results that not only meet but exceed expectations. Guided by a relentless pursuit of excellence, I view each project as a stepping stone toward refining my craft and shaping the future of digital experiences.</p>
                 
                 <!-- Skill 01 -->
-                <h2 class="text-gray-800 font-bold dark:text-white">HTML</h2>
+                <i class='bx bxl-html5 text-black text-3xl dark:text-white'></i>
 
                 <!-- Skill 01 Progress Line -->
                 <div class="w-full bg-black dark:bg-white h-1.5 rounded-md">
@@ -203,7 +228,7 @@
                 </div>
 
                 <!-- Skill 02 -->
-                <h2 class="text-gray-800 font-bold dark:text-white">CSS</h2>
+                <i class='bx bxl-css3 text-black text-3xl dark:text-white'></i>
 
                 <!-- Skill 02 Progress Line -->
                 <div class="w-full bg-black dark:bg-white h-1.5 rounded-md">
@@ -214,7 +239,7 @@
                 </div>
 
                 <!-- Skill 03 -->
-                <h2 class="text-gray-800 font-bold dark:text-white">JS</h2>
+                <i class='bx bxl-javascript text-black text-3xl dark:text-white'></i>
 
                 <!-- Skill 03 Progress Line -->
                 <div class="w-full bg-black dark:bg-white h-1.5 rounded-md">
@@ -257,7 +282,7 @@
                 <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700 dark:border-white dark:hover:border-red-600">
 
                     <!-- Service01 Image -->
-                    <img class="w-16 h-16 rounded-full border-solid border-2 border-black dark:border-white" src="https://i.gifer.com/DXKg.gif" alt="Icon">
+                    <img class="w-16 h-16 rounded-full border-solid border-2 border-black dark:border-white" src="https://i.gifer.com/DXKg.gif" alt="Web Design">
 
                     <!-- Service01 Title -->
                     <h1 class="font-bold text-lg uppercase dark:text-white">Web Design</h1>
@@ -266,7 +291,7 @@
                     <p class="text-gray-900 dark:text-white capitalize text-justify">Transform your online presence with our professional service. Crafted websites tailored to your brand.</p>
 
                     <!-- Service01 Link -->
-                    <a class="text-black font-semibold px-3 py-2 border-solid border-2 border-black hover:text-indigo-600 dark:border-white rounded-md w-fit dark:text-white uppercase text-xs dark:hover:text-red-600" href="#">Learn More</a>
+                    <a class="text-black font-semibold px-3 py-2 border-solid border-2 border-black hover:text-red-600 dark:border-white rounded-md w-fit dark:text-white uppercase text-xs dark:hover:text-red-600" href="#">Learn More</a>
 
                 </div>
 
@@ -274,10 +299,10 @@
                 <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700 dark:border-white dark:hover:border-red-600">
 
                     <!-- Service02 Image -->
-                    <img class="w-16 h-16 rounded-full border-solid border-2 border-black dark:border-white" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/950c8324317511.5633282441b03.gif" alt="Icon">
+                    <img class="w-16 h-16 rounded-full border-solid border-2 border-black dark:border-white" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/950c8324317511.5633282441b03.gif" alt="Graphic Design">
 
                     <!-- Service02 Title -->
-                    <h1 class="font-bold text-lg uppercase dark:text-white">Graphic Design</h1>
+                    <h1 class="font-bold text-lg uppercase darkGraphic Design:text-white"></h1>
 
                     <!-- Service02 Description -->
                     <p class="text-gray-900 dark:text-white capitalize text-justify">Elevate your brand with top-notch design. Captivate your audience with stunning visuals.</p>
@@ -291,7 +316,7 @@
                 <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700 dark:border-white dark:hover:border-red-600">
 
                     <!-- Service03 Image -->
-                    <img class="w-16 h-16 rounded-full border-solid border-2 border-black dark:border-white" src="https://cdn.dribbble.com/users/171004/screenshots/6017752/digital_portrait_dribbble.gif" alt="Icon">
+                    <img class="w-16 h-16 rounded-full border-solid border-2 border-black dark:border-white" src="https://cdn.dribbble.com/users/171004/screenshots/6017752/digital_portrait_dribbble.gif" alt="Social Media Management">
 
                     <!-- Service03 Title -->
                     <h1 class="font-bold text-lg uppercase dark:text-white">Social Media Management</h1>
@@ -308,7 +333,7 @@
                 <div class="w-full md:w-wider shadow-xl rounded-xl p-5 my-3 md:my-5 flex flex-col gap-3 border-solid border-2 border-black hover:border-blue-700 dark:border-white dark:hover:border-red-600">
 
                     <!-- Service04 Image -->
-                    <img class="w-16 h-16 rounded-full border-solid border-2 border-black dark:border-white" src="https://i.gifer.com/74pZ.gif" alt="Icon">
+                    <img class="w-16 h-16 rounded-full border-solid border-2 border-black dark:border-white" src="https://i.gifer.com/74pZ.gif" alt="Digital Marketing">
 
                     <!-- Service04 Title -->
                     <h1 class="font-bold text-lg uppercase dark:text-white">Digital Marketing</h1>
@@ -446,35 +471,36 @@
     <div class="w-full bg-black">
 
         <!-- Footer Section Container -->
-        <div class="container mx-auto py-5 flex items-center justify-between">
+        <div class="container mx-auto py-5 flex items-center justify-between p-2">
 
             <!-- Logo & Name Container -->
             <div class="flex items-center gap-2">
 
                 <!-- Website Logo -->
-                <img class="w-8" src="./img/logo.png" alt="Logo">
+                <a href="#"><img class="w-14" src="./img/Logo.png" alt="Logo"></a>
 
                 <!-- Webstie Name -->
-                <span class="text-2xl font-bold text-white">Portfolio</span>
+                <!-- <a href="#"><span class="text-2xl font-bold text-white">Portfolio</span></a> -->
 
             </div>
 
-            <!-- <span class="hidden md:block font-medium text-white">© 2022 Portfolio. Design With ♥️ By Mobin Fazli.</span> -->
-
             <!-- Social Media Container -->
-            <div class="flex gap-2">
+            <div class="flex gap-2 p-2">
 
-                <!-- Facbook -->
-                <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="Facebook">
+                <!-- Social Media Icon -->
+                <i class='bx bxl-instagram text-white text-2xl md:text-3xl'></i>
 
-                <!-- Instagram -->
-                <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="Instagram">
+                <!-- Social Media Icon -->
+                <i class='bx bxl-linkedin-square text-white text-2xl md:text-3xl'></i>
 
-                <!-- Twitter -->
-                <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="Twitter">
+                <!-- Social Media Icon -->
+                <i class='bx bxl-whatsapp text-white text-2xl md:text-3xl'></i>
 
-                <!-- Linkedin -->
-                <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="Linkedin">
+                <!-- Social Media Icon -->
+                <i class='bx bxl-twitter text-white text-2xl md:text-3xl'></i>
+                
+                <!-- Social Media Icon -->
+                <i class='bx bxl-github text-white text-2xl md:text-3xl'></i>
 
             </div>
 

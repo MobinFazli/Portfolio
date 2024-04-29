@@ -18,7 +18,7 @@ module.exports = {
       },
       height: {
         "tall": "200%"
-      }
+      },
     },
     fontFamily: {
       concertOne: ["Concert One", "sans-serif"]

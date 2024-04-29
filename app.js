@@ -7,17 +7,14 @@ const darkModeBtn = document.querySelector("#DarkBtn");
 
 hamburgerMenu.addEventListener("click", () => {
     menuLinks.classList.toggle("hidden");
-    hamburgerMenu.classList.toggle("bg-white");
 })
 
 menuLink.forEach(link => {
     link.addEventListener("click", () => {
         menuLinks.classList.toggle("hidden");
-        hamburgerMenu.classList.toggle("bg-white");
     })
 })
 
 darkModeBtn.addEventListener("click", () => {
     body.classList.toggle("dark");
-    
 })
