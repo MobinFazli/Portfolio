@@ -18,16 +18,18 @@
 </head>
 <body class="font-concertOne dark:bg-slate-900">
     <!-- Landing Page -->
-    <div class="h-[50vh] bg-gradient-to-t from-red-500 to-red-400 relative overflow-hidden lg:h-screen dark:from-slate-800 dark:to-slate-900">
-
+    <div class="h-[50vh] bg-gradient-to-t from-red-500 to-red-400 relative overflow-hidden sm:h-screen md:h-screen lg:h-screen dark:from-slate-800 dark:to-slate-900">
+        
+        <!-- h-[50vh] -->
+        
         <!-- Nav Bar -->
         <nav class="w-full fixed top-0 z-10 bg-white dark:bg-slate-900">
 
             <!-- Nav Bar Container -->
-            <div class="container mx-auto py-5 flex items-center justify-between">
+            <div class="container mx-auto py-4 flex items-center justify-between">
 
                 <!-- Logo & Name Container -->
-                <div class="flex items-center gap-1 p-3 md:p-0">
+                <div class="flex items-center gap-1 p-5 md:p-0">
 
                     <!-- Website Logo -->
                     <a href="#"><img class="w-14" src="./img/WebsiteLogo.png" alt="Logo"></a>
@@ -71,7 +73,7 @@
                 <img id="DarkBtn" class="hidden w-9 cursor-pointer md:block" src="./img/DarkMode.png" alt="Dark Mode Icon">
                 
                 <!-- Hamburger Menu For Small Screens -->
-                <div id="hamburgerMenu" class="md:hidden cursor-pointer z-20 p-3">
+                <div id="hamburgerMenu" class="md:hidden cursor-pointer z-20 p-5">
 
                     <!-- Menu Icon -->
                     <i class='bx bxs-grid text-4xl h-1 dark:text-white'></i>
@@ -137,10 +139,10 @@
         <!-- Landing Page Contents -->
 
         <!-- Landing Page Image -->
-        <img class="absolute left-0 bottom-0 right-0 mx-auto h-3/4 object-cover sm:h-3/4" src="./img/LandingPageAvatar.png" alt="Landing Page Avatar">
+        <img class="absolute left-0 bottom-0 right-0 mx-auto h-3/4 object-cover" src="./img/LandingPageAvatar.png" alt="Landing Page Avatar">
         
         <!-- Animated Text Using AutoTyping GitHub -->
-        <div class="absolute top-24 left-0 bottom-0 right-0 mx-auto text-lg text-center sm:top-24 sm:text-center sm:left-0 sm:bottom-0 sm:right-0 sm:mx-auto sm:text-2xl md:top-20 md:text-center md:left-0 md:bottom-0 md:right-0 md:mx-auto md:text-3xl lg:top-20 lg:text-center lg:left-0 lg:bottom-0 lg:right-0 lg:mx-auto lg:text-6xl xl:top-32 xl:left-0 xl:bottom-0 xl:right-0 xl:mx-auto xl:text-center xl:text-6xl xl:uppercase">
+        <div class="absolute top-24 left-0 bottom-0 right-0 mx-auto text-lg text-center sm:top-24 sm:text-center sm:left-0 sm:bottom-0 sm:right-0 sm:mx-auto sm:text-2xl md:top-32 md:text-center md:left-0 md:bottom-0 md:right-0 md:mx-auto md:text-3xl lg:top-32 lg:text-center lg:left-0 lg:bottom-0 lg:right-0 lg:mx-auto lg:text-6xl xl:top-32 xl:left-0 xl:bottom-0 xl:right-0 xl:mx-auto xl:text-center xl:text-6xl uppercase">
             
             <!-- Text Will Be Display By JS File -->
             <span id="text" class="text-black dark:text-white"></span>
@@ -148,6 +150,8 @@
         </div>
 
     </div>
+
+    
 
     <!-- <div class="dark:bg-slate-900">
 
@@ -302,7 +306,7 @@
                     <img class="w-16 h-16 rounded-full border-solid border-2 border-black dark:border-white" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/950c8324317511.5633282441b03.gif" alt="Graphic Design">
 
                     <!-- Service02 Title -->
-                    <h1 class="font-bold text-lg uppercase darkGraphic Design:text-white"></h1>
+                    <h1 class="font-bold text-lg uppercase dark:text-white">Graphic Design</h1>
 
                     <!-- Service02 Description -->
                     <p class="text-gray-900 dark:text-white capitalize text-justify">Elevate your brand with top-notch design. Captivate your audience with stunning visuals.</p>
@@ -325,7 +329,7 @@
                     <p class="text-gray-900 dark:text-white capitalize text-justify">Enhance social media presence with engaging content. Boost brand awareness and drive traffic.</p>
 
                     <!-- Service03 Link -->
-                    <a class="text-black font-semibold px-3 py-2 border-solid border-2 border-black hover:text-indigo-600 dark:border-white rounded-md w-fit dark:text-white uppercase text-xs dark:hover:text-red-600" href="#">Learn More</a>
+                    <a class="text-black font-semibold px-3 py-2 border-solid border-2 border-black hover:text-red-600 dark:border-white rounded-md w-fit dark:text-white uppercase text-xs dark:hover:text-red-600" href="#">Learn More</a>
                     
                 </div>
 
@@ -467,11 +471,19 @@
 
     </div>
 
+
+    
+
+
+
+
+
+
     <!-- Footer Section -->
     <div class="w-full bg-black">
 
         <!-- Footer Section Container -->
-        <div class="container mx-auto py-5 flex items-center justify-between p-2">
+        <div class="container mx-auto py-3 flex items-center justify-between p-2">
 
             <!-- Logo & Name Container -->
             <div class="flex items-center gap-2">
@@ -513,5 +525,6 @@
 
     <!-- AutoTyping JS From GitHub -->
     <script src="./autotyping.js"></script>
+
 </body>
 </html>
