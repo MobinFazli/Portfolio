@@ -16,9 +16,6 @@ module.exports = {
         "wide": "30%",
         "wider": "49%"
       },
-      height: {
-        "tall": "200%"
-      },
     },
     fontFamily: {
       concertOne: ["Concert One", "sans-serif"]

@@ -67,15 +67,6 @@ var AutoTyping = function(e) {
     }
 }]).default;
 
-// const exampleText = ["✨ Where Vision Becomes Reality ✨"];
-// const exampleTyping = new AutoTyping('#text', exampleText, {
-//     typeSpeed: 100,
-//     deleteSpeed: 100,
-//     waitBeforeDelete: 2000,
-//     waitBetweenWords: 500,
-// });
-// exampleTyping.start()
-
 // Define the text content for different screen sizes
 const largeScreenText = ["✨ Where Vision Becomes Reality ✨"];
 const smallScreenText = [];
