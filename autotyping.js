@@ -67,11 +67,38 @@ var AutoTyping = function(e) {
     }
 }]).default;
 
-const exampleText = ["✨ Where Vision Becomes Reality ✨"];
-const exampleTyping = new AutoTyping('#text', exampleText, {
-    typeSpeed: 100,
-    deleteSpeed: 100,
-    waitBeforeDelete: 2000,
-    waitBetweenWords: 500,
-});
-exampleTyping.start()
+// const exampleText = ["✨ Where Vision Becomes Reality ✨"];
+// const exampleTyping = new AutoTyping('#text', exampleText, {
+//     typeSpeed: 100,
+//     deleteSpeed: 100,
+//     waitBeforeDelete: 2000,
+//     waitBetweenWords: 500,
+// });
+// exampleTyping.start()
+
+// Define the text content for different screen sizes
+const largeScreenText = ["✨ Where Vision Becomes Reality ✨"];
+const smallScreenText = [];
+
+// Function to update text content based on screen size
+function updateTextContent() {
+    if (window.matchMedia("(min-width: 1024px)").matches) {
+        // Large screen
+        const exampleTyping = new AutoTyping('#text', largeScreenText, {
+            typeSpeed: 150, // Adjust the typing speed
+            deleteSpeed: 150, // Adjust the deleting speed
+            waitBeforeDelete: 2000,
+            waitBetweenWords: 500,
+        });
+        exampleTyping.start();
+    } else {
+        // Small screen
+        document.getElementById('text').innerText = "";
+    }
+}
+
+// Call the function initially to set the text content based on the current screen size
+updateTextContent();
+
+// Add a listener for screen size changes
+window.addEventListener('resize', updateTextContent);
