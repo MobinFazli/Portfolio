@@ -14,7 +14,7 @@ module.exports = {
         "sw": "20%",
         "wd": "26%",
         "wide": "30%",
-        "wider": "49%"
+        "wider": "49%",
       },
     },
     fontFamily: {
